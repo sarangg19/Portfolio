@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:"Segoe UI",Arial,sans-serif;}
+    body{
+      background:linear-gradient(135deg,#0f172a,#1e293b);
+      color:#e2e8f0;
+      line-height:1.6;
+      scroll-behavior:smooth;
+    }
+
+    nav{
+      background:#0f172a;
+      padding:12px 30px;
+      position:sticky;
+      top:0;
+      z-index:1000;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+    .logo{font-size:20px;font-weight:700;color:#8b5cf6;}
+    nav ul{list-style:none;display:flex;gap:24px;}
+    nav a{color:#f9fafb;text-decoration:none;font-size:15px;font-weight:500;transition:.3s;}
+    nav a:hover{color:#8b5cf6;}
+
+    .container{max-width:1000px;margin:30px auto;padding:20px;}
+
+    .intro{
+      background:#ffffff;
+      padding:30px;
+      border-radius:16px;
+      box-shadow:0 8px 25px rgba(0,0,0,0.25);
+      color:#1f2937;
+      text-align:center;
+      margin-bottom:50px;
+    }
+    .avatar{
+      width:160px;height:160px;border-radius:50%;overflow:hidden;
+      border:5px solid #8b5cf6;
+      margin:0 auto 20px;
+    }
+    .avatar img{width:100%;height:100%;object-fit:cover;}
+    h1{font-size:32px;color:#111827;}
+    .subtitle{color:#374151;font-size:15px;margin-top:8px;}
+
+    section{
+      margin-bottom:50px;
+      padding:25px;
+      border-radius:14px;
+      background:#ffffff;
+      box-shadow:0 6px 20px rgba(0,0,0,0.1);
+      transition:.3s;
+    }
+    section:hover{transform:translateY(-3px);box-shadow:0 10px 25px rgba(0,0,0,0.15);}
+    section h2{
+      font-size:22px;
+      color:#0f172a;
+      margin-bottom:15px;
+      border-left:5px solid #8b5cf6;
+      padding-left:10px;
+    }
+    section p{color:#374151;font-size:15px;}
+
+    .edu-card{
+      background:#f3f4f6;
+      padding:16px;
+      border-radius:10px;
+      margin-bottom:12px;
+      border-left:4px solid #8b5cf6;
+    }
+
+    .card{
+      background:#f9fafb;
+      padding:18px;
+      border-radius:12px;
+      margin-bottom:15px;
+      display:flex;
+      align-items:center;
+      gap:15px;
+      border:1px solid #e5e7eb;
+      transition:.3s;
+    }
+    .card:hover{transform:translateY(-4px);box-shadow:0 6px 15px rgba(0,0,0,0.1);}
+    .card img{
+      width:60px;height:60px;
+      border-radius:10px;
+      object-fit:cover;
+    }
+    .card-content strong{font-size:16px;color:#111827;}
+    .card-content p,.card-content small{font-size:14px;color:#374151;}
+
+    .contact-links{display:flex;gap:15px;flex-wrap:wrap;margin-top:15px;}
+    .contact-links a{
+      display:inline-block;
+      padding:12px 20px;
+      border-radius:8px;
+      text-decoration:none;
+      font-weight:600;
+      color:#0f172a;
+      background:#f9fafb;
+      border:1px solid #e5e7eb;
+      transition:.3s;
+    }
+    .contact-links a:hover{
+      transform:translateY(-3px);
+      box-shadow:0 6px 15px rgba(0,0,0,0.1);
+    }
+
+    footer{text-align:center;margin-top:25px;font-size:13px;color:#94a3b8;}
+
+    @media(max-width:600px){
+      nav{flex-direction:column;gap:10px;}
+      nav ul{flex-direction:column;gap:10px;}
+      section{padding:18px;}
+      .card{flex-direction:column;align-items:flex-start;}
+      .contact-links{flex-direction:column;}
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">My Portfolio</div>
+    <ul>
+      <li><a href="#About">About Me</a></li>
+      <li><a href="#Education">Education</a></li>
+      <li><a href="#Projects">Projects</a></li>
+      <li><a href="#Certificates">Certificates</a></li>
+      <li><a href="#Contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="intro">
+      <div class="avatar">
+         <img src="E:\Photo.jpeg">
+        
+      </div>
+      <h1>Sarang Gawade</h1>
+      <p class="subtitle">Web & Software Enthusiast | Lifelong Learner | Aspiring Developer</p>
+    </div>
+
+    <section id="About">
+      <h2>About Me</h2>
+      <p>
+        I am Sarang Gawade,currently persuing Btech in Computer Science Engineering,I'm passionate about technology and development. 
+        I enjoy building creative solutions, exploring new tools and learning concepts in computer science. 
+        My goal is to grow as a software developer and contribute to impactful projects.
+      </p>
+    </section>
+
+    <section id="Education">
+      <h2>Education</h2>
+      <div class="edu-card">
+        <p>10th - Infant Jesus High School</p>
+        <p>Year: 2021 | Grade: 88%</p>
+      </div>
+      <div class="edu-card">
+        <p>12th - SNBP College</p>
+        <p>Year: 2023 | Grade: 81%</p>
+      </div>
+    </section>
+
+    <section id="Projects">
+      <h2>Projects</h2>
+      <div class="card">
+        <div class="card-content">
+          <strong>Personal Portfolio Website</strong>
+          <p>A responsive and professional portfolio built with HTML, CSS.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <strong>Password Strength Validator</strong>
+          <p>Developed a DFA-based project to validate password strength using automata theory concepts.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="Certificates">
+      <h2>Certificates</h2>
+      <div class="card">
+        <img src="C:\Users\Ganesh Gawade\Pictures\redhat image.png" alt="Certificate">
+        <div class="card-content">
+          <strong>Redhat Academy</strong>
+          <small>Issued by Redhat Academy — 2023</small>
+        </div>
+      </div>
+      <div class="card">
+        <img src="C:\Users\Ganesh Gawade\Pictures\cousera image.png" alt="Java">
+        <div class="card-content">
+          <strong>Cousera</strong>
+          <small>PCU University — 2024</small>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://img.icons8.com/color/96/000000/security-checked.png" alt="Cybersecurity">
+        <div class="card-content">
+          <strong>Cybersecurity Basics</strong>
+          <small>Online Course — 2021</small>
+        </div>
+      </div>
+    </section>
+    <section id="Contact">
+      <h2>Contact Me</h2>
+      <p>If you’d like to get in touch, feel free to reach out through the links below:</p>
+      <div class="contact-links">
+        <a href="mailto:sarang@example.com"> Email Me</a>
+        <a href="https://github.com/sarangg19" target="_blank">🐙 GitHub</a>
+      </div>
+    </section>
+
+    <footer>© 2025 Sarang Gawade | All Rights Reserved</footer>
+  </div>
+</body>
+</html>
